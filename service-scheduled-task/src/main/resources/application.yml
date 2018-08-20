@@ -1,0 +1,18 @@
+
+server:
+  port: 8080
+
+spring:
+    application:
+        name: service-scheduled-task
+    task:
+        pool:
+            # 核心线程数
+            # 高并发、任务执行时间短的业务，线程池线程数可以设置为CPU核数+1，减少线程上下文的切换
+            corePoolSize : 5
+            # 最大线程数
+            maxPoolSize : 10
+            # 线程内容执行完后60秒停止
+            keepAliveSeconds : 60
+            # 配置队列大小
+            queueCapacity : 30
