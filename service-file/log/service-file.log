@@ -1,0 +1,342 @@
+2018-08-20 10:51:06.883  INFO 10204 --- [main] com.jw.ServiceFileApplicationTests       : No active profile set, falling back to default profiles: default
+2018-08-20 10:51:06.890  INFO 10204 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6fefce9e: startup date [Mon Aug 20 10:51:06 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7f485fda
+2018-08-20 10:51:08.078  INFO 10204 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ad6e8b76-206d-3126-845c-6fdc91957899
+2018-08-20 10:51:08.134  INFO 10204 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-20 10:51:08.231  INFO 10204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$77f9dda2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-20 10:51:09.217  INFO 10204 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6fefce9e: startup date [Mon Aug 20 10:51:06 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7f485fda
+2018-08-20 10:51:09.315  INFO 10204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload]}" onto public java.util.Map com.jw.business.FileController.upload(org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest)
+2018-08-20 10:51:09.316  INFO 10204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/download]}" onto public org.springframework.web.servlet.ModelAndView com.jw.business.FileController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-08-20 10:51:09.318  INFO 10204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-20 10:51:09.319  INFO 10204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-20 10:51:09.360  INFO 10204 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:51:09.361  INFO 10204 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:51:09.408  INFO 10204 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 10:51:09.928  WARN 10204 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-20 10:51:09.929  INFO 10204 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-20 10:51:09.946  WARN 10204 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-20 10:51:09.946  INFO 10204 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-20 10:51:10.155  INFO 10204 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-08-20 10:51:10.166  INFO 10204 --- [main] com.jw.ServiceFileApplicationTests       : Started ServiceFileApplicationTests in 6.443 seconds (JVM running for 8.318)
+2018-08-20 10:51:10.282  INFO 10204 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6fefce9e: startup date [Mon Aug 20 10:51:06 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7f485fda
+2018-08-20 10:51:10.303  INFO 10204 --- [Thread-5] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-08-20 10:51:10.315  INFO 10204 --- [Thread-5] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application service-file with eureka with status DOWN
+2018-08-20 10:51:10.433  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-08-20 10:51:11.525  INFO 10204 --- [Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-08-20 10:51:11.525  INFO 10204 --- [Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-08-20 10:51:11.885  INFO 10204 --- [Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-08-20 10:51:11.886  INFO 10204 --- [Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-08-20 10:51:12.255  INFO 10204 --- [Thread-5] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-20 10:51:12.416  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-08-20 10:51:12.416  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-08-20 10:51:12.417  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-08-20 10:51:12.417  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-08-20 10:51:12.417  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-08-20 10:51:12.417  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-08-20 10:51:12.417  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-08-20 10:51:14.683 ERROR 10204 --- [Thread-5] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplications(AbstractJerseyEurekaHttpClient.java:165) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1013) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:927) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:408) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:266) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:262) [eureka-client-1.6.1.jar:1.6.1]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:60) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:225) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$7f62d6c1.CGLIB$eurekaClient$0(<generated>) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$7f62d6c1$$FastClassBySpringCGLIB$$4ece2ecd.invoke(<generated>) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$7f62d6c1.eurekaClient(<generated>) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:345) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:359) [spring-cloud-context-1.2.0.RC1.jar:1.2.0.RC1]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:176) [spring-cloud-context-1.2.0.RC1.jar:1.2.0.RC1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:340) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:133) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:122) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(EurekaServiceRegistry.java:71) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.stop(EurekaAutoServiceRegistration.java:82) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(EurekaAutoServiceRegistration.java:126) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:256) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:177) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:140) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:991) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.3.jar:4.5.3]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 67 common frames omitted
+
+2018-08-20 10:51:14.684  WARN 10204 --- [Thread-5] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2018-08-20 10:51:14.695 ERROR 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-FILE/DESKTOP-T4U79RG:service-file:-1 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1013) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:927) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:408) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:266) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:262) [eureka-client-1.6.1.jar:1.6.1]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:60) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:225) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$7f62d6c1.CGLIB$eurekaClient$0(<generated>) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$7f62d6c1$$FastClassBySpringCGLIB$$4ece2ecd.invoke(<generated>) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$7f62d6c1.eurekaClient(<generated>) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:345) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:359) [spring-cloud-context-1.2.0.RC1.jar:1.2.0.RC1]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:176) [spring-cloud-context-1.2.0.RC1.jar:1.2.0.RC1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:340) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:133) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:122) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(EurekaServiceRegistry.java:71) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.stop(EurekaAutoServiceRegistration.java:82) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(EurekaAutoServiceRegistration.java:126) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:256) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:177) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:140) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:991) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+
+2018-08-20 10:51:14.696  WARN 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2018-08-20 10:51:14.697  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2018-08-20 10:51:14.702  INFO 10204 --- [Thread-5] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-08-20 10:51:14.705  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1534733474705 with initial instances count: 0
+2018-08-20 10:51:14.755  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-08-20 10:51:14.757  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2018-08-20 10:51:16.786 ERROR 10204 --- [Thread-5] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:885) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:863) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient$$FastClassBySpringCGLIB$$a84c8cb4.invoke(<generated>) [eureka-client-1.6.1.jar:1.6.1]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.context.config.StandardBeanLifecycleDecorator$2.invoke(StandardBeanLifecycleDecorator.java:85) [spring-cloud-context-1.2.0.RC1.jar:1.2.0.RC1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient$$EnhancerBySpringCGLIB$$99a32536.shutdown(<generated>) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(EurekaServiceRegistry.java:71) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.stop(EurekaAutoServiceRegistration.java:82) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(EurekaAutoServiceRegistration.java:126) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:256) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:177) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:140) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:991) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.3.jar:4.5.3]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 46 common frames omitted
+
+2018-08-20 10:51:16.787  WARN 10204 --- [Thread-5] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2018-08-20 10:51:16.788 ERROR 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-FILE/DESKTOP-T4U79RG:service-file:-1 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:885) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:863) [eureka-client-1.6.1.jar:1.6.1]
+	at com.netflix.discovery.DiscoveryClient$$FastClassBySpringCGLIB$$a84c8cb4.invoke(<generated>) [eureka-client-1.6.1.jar:1.6.1]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.context.config.StandardBeanLifecycleDecorator$2.invoke(StandardBeanLifecycleDecorator.java:85) [spring-cloud-context-1.2.0.RC1.jar:1.2.0.RC1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient$$EnhancerBySpringCGLIB$$99a32536.shutdown(<generated>) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister(EurekaServiceRegistry.java:71) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.stop(EurekaAutoServiceRegistration.java:82) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent(EurekaAutoServiceRegistration.java:126) [spring-cloud-netflix-eureka-client-1.3.0.RC1.jar:1.3.0.RC1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:256) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:177) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:140) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:991) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+
+2018-08-20 10:51:16.918  INFO 10204 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2018-08-20 10:51:16.928  INFO 10204 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-08-20 11:01:18.964  INFO 13272 --- [main] com.jw.ServiceFileApplicationTests       : No active profile set, falling back to default profiles: default
+2018-08-20 11:01:18.971  INFO 13272 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@63c5efee: startup date [Mon Aug 20 11:01:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7f485fda
+2018-08-20 11:01:19.793  INFO 13272 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ad6e8b76-206d-3126-845c-6fdc91957899
+2018-08-20 11:01:19.857  INFO 13272 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-20 11:01:19.921  INFO 13272 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$77f9dda2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-20 11:01:21.747  INFO 13272 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@63c5efee: startup date [Mon Aug 20 11:01:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7f485fda
+2018-08-20 11:01:22.075  INFO 13272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload]}" onto public java.util.Map com.jw.business.FileController.upload(org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest)
+2018-08-20 11:01:22.078  INFO 13272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/download]}" onto public org.springframework.web.servlet.ModelAndView com.jw.business.FileController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-08-20 11:01:22.083  INFO 13272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-20 11:01:22.084  INFO 13272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-20 11:01:22.133  INFO 13272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 11:01:22.133  INFO 13272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 11:01:22.171  INFO 13272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-20 11:01:22.526  WARN 13272 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-20 11:01:22.526  INFO 13272 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-20 11:01:22.537  WARN 13272 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-20 11:01:22.537  INFO 13272 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-20 11:01:22.769  INFO 13272 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-08-20 11:01:22.788  INFO 13272 --- [main] com.jw.ServiceFileApplicationTests       : Started ServiceFileApplicationTests in 5.395 seconds (JVM running for 6.28)
+2018-08-20 11:01:22.852  INFO 13272 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@63c5efee: startup date [Mon Aug 20 11:01:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7f485fda
+2018-08-20 11:01:22.862  INFO 13272 --- [Thread-5] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-08-20 11:01:22.880  INFO 13272 --- [Thread-5] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application service-file with eureka with status DOWN
+2018-08-20 11:01:22.935  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-08-20 11:01:23.517  INFO 13272 --- [Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-08-20 11:01:23.518  INFO 13272 --- [Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-08-20 11:01:23.750  INFO 13272 --- [Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-08-20 11:01:23.750  INFO 13272 --- [Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-08-20 11:01:23.929  INFO 13272 --- [Thread-5] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-20 11:01:24.066  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-08-20 11:01:24.067  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-08-20 11:01:24.067  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-08-20 11:01:24.067  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-08-20 11:01:24.067  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-08-20 11:01:24.068  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-08-20 11:01:24.068  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-08-20 11:01:24.332  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-08-20 11:01:24.334  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2018-08-20 11:01:24.337  INFO 13272 --- [Thread-5] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-08-20 11:01:24.340  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1534734084339 with initial instances count: 3
+2018-08-20 11:01:24.373  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-08-20 11:01:24.374  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2018-08-20 11:01:24.432  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-FILE/DESKTOP-T4U79RG:service-file:-1 - deregister  status: 404
+2018-08-20 11:01:24.464  INFO 13272 --- [Thread-5] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2018-08-20 11:01:24.466  INFO 13272 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0

@@ -1,0 +1,30 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    # 每隔5秒向注册中心发送心跳
+    lease-renewal-interval-in-seconds: 5
+    # 连续5秒没有给服务端发送心跳，让注册中心踢掉自己
+    lease-expiration-duration-in-seconds: 5
+
+server:
+  port: 8091
+
+spring:
+    application:
+        name: service-file
+
+file:
+  # 单个文件大小限制
+  maxFileSize: 5MB
+  # 单次上传文件大小限制
+  maxRequestSize: 50MB
+  #文件存储的绝对路径
+  baseUrl: F:\work\workspace\storage\
+
+# 打印sql,可配置多个
+logging:
+  file : log\service-file.log
+  level:
+     com.jw.business : debug
