@@ -1,0 +1,26 @@
+1、pom中plugins改为
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.jw.ServiceZuulApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+	
+2、启动类
+	extends SpringBootServletInitializer
+
+	//为了打包springboot项目
+    @Override
+    protected SpringApplicationBuilder configure(
+        SpringApplicationBuilder builder) {
+        return builder.sources(this.getClass());
+    }
+	
+3、单元测试类test文件夹中，测试类添加 abstract
+
+4、右侧：maven projects-项目名-lifecycle,依次运行 clean、install
