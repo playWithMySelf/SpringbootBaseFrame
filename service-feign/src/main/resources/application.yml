@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8765
+spring:
+  application:
+    name: service-feign
+  http:
+        # 多文件上传配置
+        multipart:
+          max-file-size: 5Mb      # Max file size，默认1M
+          max-request-size: 50Mb   # Max request size，默认10M
