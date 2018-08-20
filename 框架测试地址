@@ -1,0 +1,35 @@
+1、注册中心
+http://localhost:8761/
+
+2、服务注册者（service-user项目下的所有服务）
+    2.1 微服务-用户
+    http://localhost:8080/gateway?service=userServiceImpl&method=findAllUser&pageNum=1&pageSize=10
+    http://localhost:8081/gateway?service=userServiceImpl&method=findAllUser&pageNum=1&pageSize=10
+
+    2.2 微服务-文件上传下载
+        2.2.1 文件上传（支持多个）
+        http://localhost:8091//upload?fileType=image&belongToSystem=test&file=
+        2.2.2 文件下载
+        http://localhost:8091//download?filePath=images/test/20180814/BDyWXqZ1.png
+
+3、zuul路由负载访问各服务（负载访问注册中心上的服务,需要携带token）。
+    3.1：分页查询用户
+    http://localhost:8769/api-user/gateway?service=userServiceImpl&method=findAllUser&pageNum=1&pageSize=10&token=123
+
+    3.2：利用线程池发送邮件（使用postman）
+    http://localhost:8769/api-user/gateway?service=commonServiceImpl&method=sendEmail&token=123&paramtype=com.jw.business.common.modal.EmailBean&
+    formInfo={"from":"0528","to":"est0528","content":"0528"}
+
+    3.3: 文件上传下载
+    http://localhost:8769/api-file/upload?fileType=image&belongToSystem=test&token=1111&file=
+    http://localhost:8769/api-file/download?filePath=images/test/20180814/BDyWXqZ1.png&token=1
+
+4、使用feign负载访问服务
+    4.1 分页查询
+    http://localhost:8765/getUser?service=userServiceImpl&method=findAllUser&pageNum=1&pageSize=10
+    4.2 发送邮件
+    http://localhost:8765/getUser?service=commonServiceImpl&method=sendEmail&paramtype=com.jw.business.common.modal.EmailBean&
+    formInfo={"from":"0528","to":"est0528","content":"0528"}
+    4.3 文件上传
+    http://localhost:8765/upload?fileType=image&belongToSystem=test&file=
+
