@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server" />
+        <module name="service-feign" />
+        <module name="service-file" />
+        <module name="service-scheduled-task" />
+        <module name="service-user" />
+        <module name="service-zuul" />
+        <module name="SpringbootBaseFrame" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-server" target="1.8" />
+      <module name="service-feign" target="1.8" />
+      <module name="service-file" target="1.8" />
+      <module name="service-scheduled-task" target="1.8" />
+      <module name="service-user" target="1.8" />
+      <module name="service-zuul" target="1.8" />
+      <module name="SpringbootBaseFrame" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
