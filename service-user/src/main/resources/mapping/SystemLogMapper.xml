@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jw.business.log.mapper.SystemLogMapper" >
+  <resultMap id="BaseResultMap" type="com.jw.business.log.model.SystemLog" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="userid" property="userid" jdbcType="VARCHAR" />
+    <result column="usedate" property="usedate" jdbcType="DATE" />
+    <result column="usemoudle" property="usemoudle" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="userxm" property="userxm" jdbcType="VARCHAR" />
+    <result column="sszzjg" property="sszzjg" jdbcType="VARCHAR" />
+    <result column="usefunction" property="usefunction" jdbcType="VARCHAR" />
+    <result column="userip" property="userip" jdbcType="VARCHAR" />
+    <result column="optiontype" property="optiontype" jdbcType="VARCHAR" />
+    <result column="optiondata" property="optiondata" jdbcType="VARCHAR" />
+    <result column="domainid" property="domainid" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, userid, usedate, usemoudle, remark, userxm, sszzjg, usefunction, userip, optiontype, 
+    optiondata, domainid
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_system_log
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_system_log
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.jw.business.log.model.SystemLog" >
+    insert into t_system_log (id, userid, usedate, 
+      usemoudle, remark, userxm, 
+      sszzjg, usefunction, userip, 
+      optiontype, optiondata, domainid
+      )
+    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=VARCHAR}, #{usedate,jdbcType=DATE}, 
+      #{usemoudle,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{userxm,jdbcType=VARCHAR}, 
+      #{sszzjg,jdbcType=VARCHAR}, #{usefunction,jdbcType=VARCHAR}, #{userip,jdbcType=VARCHAR}, 
+      #{optiontype,jdbcType=VARCHAR}, #{optiondata,jdbcType=VARCHAR}, #{domainid,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.jw.business.log.model.SystemLog" >
+    insert into t_system_log
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userid != null" >
+        userid,
+      </if>
+      <if test="usedate != null" >
+        usedate,
+      </if>
+      <if test="usemoudle != null" >
+        usemoudle,
+      </if>
+      <if test="remark != null" >
+        remark,
+      </if>
+      <if test="userxm != null" >
+        userxm,
+      </if>
+      <if test="sszzjg != null" >
+        sszzjg,
+      </if>
+      <if test="usefunction != null" >
+        usefunction,
+      </if>
+      <if test="userip != null" >
+        userip,
+      </if>
+      <if test="optiontype != null" >
+        optiontype,
+      </if>
+      <if test="optiondata != null" >
+        optiondata,
+      </if>
+      <if test="domainid != null" >
+        domainid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userid != null" >
+        #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="usedate != null" >
+        #{usedate,jdbcType=DATE},
+      </if>
+      <if test="usemoudle != null" >
+        #{usemoudle,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="userxm != null" >
+        #{userxm,jdbcType=VARCHAR},
+      </if>
+      <if test="sszzjg != null" >
+        #{sszzjg,jdbcType=VARCHAR},
+      </if>
+      <if test="usefunction != null" >
+        #{usefunction,jdbcType=VARCHAR},
+      </if>
+      <if test="userip != null" >
+        #{userip,jdbcType=VARCHAR},
+      </if>
+      <if test="optiontype != null" >
+        #{optiontype,jdbcType=VARCHAR},
+      </if>
+      <if test="optiondata != null" >
+        #{optiondata,jdbcType=VARCHAR},
+      </if>
+      <if test="domainid != null" >
+        #{domainid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jw.business.log.model.SystemLog" >
+    update t_system_log
+    <set >
+      <if test="userid != null" >
+        userid = #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="usedate != null" >
+        usedate = #{usedate,jdbcType=DATE},
+      </if>
+      <if test="usemoudle != null" >
+        usemoudle = #{usemoudle,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null" >
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="userxm != null" >
+        userxm = #{userxm,jdbcType=VARCHAR},
+      </if>
+      <if test="sszzjg != null" >
+        sszzjg = #{sszzjg,jdbcType=VARCHAR},
+      </if>
+      <if test="usefunction != null" >
+        usefunction = #{usefunction,jdbcType=VARCHAR},
+      </if>
+      <if test="userip != null" >
+        userip = #{userip,jdbcType=VARCHAR},
+      </if>
+      <if test="optiontype != null" >
+        optiontype = #{optiontype,jdbcType=VARCHAR},
+      </if>
+      <if test="optiondata != null" >
+        optiondata = #{optiondata,jdbcType=VARCHAR},
+      </if>
+      <if test="domainid != null" >
+        domainid = #{domainid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jw.business.log.model.SystemLog" >
+    update t_system_log
+    set userid = #{userid,jdbcType=VARCHAR},
+      usedate = #{usedate,jdbcType=DATE},
+      usemoudle = #{usemoudle,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      userxm = #{userxm,jdbcType=VARCHAR},
+      sszzjg = #{sszzjg,jdbcType=VARCHAR},
+      usefunction = #{usefunction,jdbcType=VARCHAR},
+      userip = #{userip,jdbcType=VARCHAR},
+      optiontype = #{optiontype,jdbcType=VARCHAR},
+      optiondata = #{optiondata,jdbcType=VARCHAR},
+      domainid = #{domainid,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

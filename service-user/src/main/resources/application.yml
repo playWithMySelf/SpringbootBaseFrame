@@ -1,0 +1,59 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    # 每隔5秒向注册中心发送心跳
+    lease-renewal-interval-in-seconds: 5
+    # 连续5秒没有给服务端发送心跳，让注册中心踢掉自己
+    lease-expiration-duration-in-seconds: 5
+
+server:
+  port: 8081
+#  context-path: /service-user
+
+spring:
+    application:
+        name: service-user
+    datasource:
+        name: test
+        url: jdbc:mysql://127.0.0.1:3306/test
+        username: root
+        password: jin.0855
+        # 使用druid数据源
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        filters: stat
+        maxActive: 20
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
+    task:
+        pool:
+            # 核心线程数
+            # 高并发、任务执行时间短的业务，线程池线程数可以设置为CPU核数+1，减少线程上下文的切换
+            corePoolSize : 5
+            # 最大线程数
+            maxPoolSize : 10
+            # 线程内容执行完后60秒停止
+            keepAliveSeconds : 60
+            # 配置队列大小
+            queueCapacity : 30
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.jw.business.*.model
+
+# 打印sql,可配置多个
+logging:
+  file : log\service-user.log
+  level:
+     com.jw.business : debug
